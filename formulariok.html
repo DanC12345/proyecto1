@@ -1,0 +1,75 @@
+<html lang="es">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+
+  <link rel="stylesheet" type="text/css" href="fork.css">
+  
+  </head>
+
+
+<body>  
+  
+  <!-- formulario de contacto en html y css -->  
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Danos tu opinion</h1>
+        <h3>Cuentanos tu opinion asi ofreceremos nuestro mejor servicio.</h3>
+
+
+          <form action="index13.html" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+               
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Compartenos tu opinión
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="button" name="enviar_formulario" id="enviar" onclick="EnviarMensaje()"><p>Enviar</p></button>
+                 
+                <a href="index13.html">Regresar a la pagina principal</a>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+
+
+
+          <script>
+function EnviarMensaje(){
+    alert("Mensaje Enviado Correctamente")
+    location.href = "index.html"
+    
+}
+
+            
+          </script>
+    </div>  
+  </div>
+
+</body>
+</html>
